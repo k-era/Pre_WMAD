@@ -1,0 +1,71 @@
+body {
+    margin: 0 auto;
+    width: 80%;
+    background-color: rgba(26, 55, 229, 0.06);
+    font-family: serif;
+}
+
+h1 {
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Gill Sans", sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+#main_head {
+    font-size: 20px;
+}
+
+#sub_head {
+    font-size: 15px;
+}
+
+.img {
+    float: left;
+    padding: 10px;
+}
+
+.volleyball {
+    border: solid 1px #000;
+}
+
+#fl-br {
+    clear: both;
+}
+
+table, th, td {
+    border: solid 1px #000;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    padding: 0 10px 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 50%;
+}
+
+td {
+    padding: 0 10px 20px;
+    width: 50%;
+}
+
+.two-el::first-letter {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.two-el::first-line {
+    background-color: gray;
+}
+
+.one-el::first-letter {
+    font-weight: bold;
+    font-size: 1.5em;
+}
