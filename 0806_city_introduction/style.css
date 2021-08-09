@@ -1,7 +1,6 @@
-body {
+.main_container {
   margin: 0 auto;
   width: 80%;
-  /* background-color: rgba(26, 55, 229, 0.06); */
   font-family: 'STIX Two Text', serif;
   color: #292929;
 }
@@ -10,24 +9,24 @@ img {
   width: 100%;
 }
 
-h1 {
+.title {
   font-size: 25px;
   margin: 20px;
   text-align: center;
   color: #000000;
 }
 
-h2 {
+.sub_title {
   padding: 5px;
   font-size: 18px;
   background-color: #c5c5c5b0;
 }
 
-p {
+article p {
   padding: 5px;
 }
 
-a {
+.main_container a {
   color: inherit;
   text-decoration: none;
 }
@@ -66,7 +65,9 @@ nav {
 
 .pict {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   margin:0px;
   padding:0px;
@@ -80,6 +81,30 @@ nav {
 }
 
 footer p {
+  border-top: 1px solid #292929;
+  padding: 1em;
   font-size: 8px;
   text-align: center;
+}
+
+/* responsive */
+@media(max-width: 700px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .home, .introduction, .history, .pictures {
+    width: 50%;
+    padding: 10px 0;
+    text-align: center;
+    background-color: #ffffffee;
+  }
+
+  .pict li {
+    float:left;
+    list-style-type:none;
+    width: 100%;
+    padding: 1%;
+    align-items: center;
+  }
 }
