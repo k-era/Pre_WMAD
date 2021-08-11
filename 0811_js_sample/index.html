@@ -14,6 +14,9 @@
   <div><p id="ope1"></p></div>
   <div><p id="ope2"></p></div>
   <div><p id="ope3"></p></div>
+  <div><p id="ope1a"></p></div>
+  <div><p id="ope2a"></p></div>
+  <div><p id="ope3a"></p></div>
 </body>
 
 <script>
@@ -36,14 +39,32 @@
   var input_val = document.getElementById('ope1');
   input_val.innerHTML = ope1;
   console.log(ope1);
+
+  // add other way
+  var input_val = document.getElementById('ope1a');
+  ope1a_val = document.createTextNode(ope1);
+  input_val.appendChild(ope1a_val);
+
   var ope2 = 30 + 20 * 10;
   var input_val = document.getElementById('ope2');
   input_val.innerHTML = ope2;
   console.log(ope2);
+
+  // add other way
+  var input_val = document.getElementById('ope2a');
+  ope2a_val = document.createTextNode(ope2);
+  input_val.appendChild(ope2a_val);
+
   var ope3 = 40 + 20 -10;
   var input_val = document.getElementById('ope3');
   input_val.innerHTML = ope3;
-  console.log(ope1);
+  console.log(ope3);
+
+
+  // add other way
+  var input_val = document.getElementById('ope3a');
+  ope3a_val = document.createTextNode(ope3);
+  input_val.appendChild(ope3a_val);
 </script>
 
 </html>
