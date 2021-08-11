@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS sample</title>
+</head>
+<body>
+  <div><p id="animal1"></p></div>
+  <div><p id="animal2"></p></div>
+  <div><p id="animal3"></p></div>
+  <div><p id="animal4"></p></div>
+  <div><p id="animal5"></p></div>
+  <div><p id="ope1"></p></div>
+  <div><p id="ope2"></p></div>
+  <div><p id="ope3"></p></div>
+</body>
+
+<script>
+  var animal1 = document.createTextNode('rabbit');
+  var animal2 = document.createTextNode('bird');
+  var animal3 = document.createTextNode('cow');
+  var animal4 = document.createTextNode('mouse');
+  var animal5 = document.createTextNode('cat');
+  var input_val = document.getElementById('animal1');
+  input_val.appendChild(animal1);
+  var input_val = document.getElementById('animal2');
+  input_val.appendChild(animal2);
+  var input_val = document.getElementById('animal3');
+  input_val.appendChild(animal3);
+  var input_val = document.getElementById('animal4');
+  input_val.appendChild(animal4);
+  var input_val = document.getElementById('animal5');
+  input_val.appendChild(animal5);
+  var ope1 = 49 + 20 - 19;
+  var input_val = document.getElementById('ope1');
+  input_val.innerHTML = ope1;
+  console.log(ope1);
+  var ope2 = 30 + 20 * 10;
+  var input_val = document.getElementById('ope2');
+  input_val.innerHTML = ope2;
+  console.log(ope2);
+  var ope3 = 40 + 20 -10;
+  var input_val = document.getElementById('ope3');
+  input_val.innerHTML = ope3;
+  console.log(ope1);
+</script>
+
+</html>
